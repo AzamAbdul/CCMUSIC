@@ -9,6 +9,10 @@
 	-moz-box-shadow:inset 0px 0px 0px 0px #bee2f9;
 	-webkit-box-shadow:inset 0px 0px 0px 0px #bee2f9;
 	box-shadow:inset 0px 0px 0px 0px #bee2f9;
+	background-attachment: relative;
+  	background-position: center center;
+  	position: relative; top:80px;
+
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf) );
 	background:-moz-linear-gradient( center top, #63b8ee 5%, #468ccf 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf');
@@ -18,9 +22,7 @@
 	border:1px solid #3866a3;
 	display:inline-block;
 	color:#ffffff;
-	top: 150px;
-	left:45%;
-	font-family:Times New Roman;
+	font-family:Lato;
 	font-size:15px;
 	font-weight:bold;
 	font-style:normal;
@@ -40,12 +42,34 @@
 
 	position: relative;
 	text-align: center;
-	top: 50px;
+	top: 20px;
 	color: #ffffff;;
     font-size: 20px;
     font-weight: 800;
 
 }
+
+.header {
+  background: #1CBCAD;
+  /*background: url(../images/header-bg-2.jpg) no-repeat center top;*/
+  padding-top:80px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 300px;
+  width: 100%;
+  
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .information{
 	position: relative;
 	text-align: center;
