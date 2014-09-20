@@ -49,6 +49,31 @@
 
 }
 
+.background-image {
+
+	background: url(../party.jpg) no-repeat center top;
+	background-attachment: relative;
+	background-position: center center;
+  	min-height: 300px;
+  	width: 100%;
+
+  	 -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+   -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
 .header {
   /*background: #1CBCAD;*/
   /*background: url(../images/header-bg-2.jpg) no-repeat center top;*/
