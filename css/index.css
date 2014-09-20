@@ -50,7 +50,7 @@
 }
 
 .header {
-  background: #1CBCAD;
+  /*background: #1CBCAD;*/
   /*background: url(../images/header-bg-2.jpg) no-repeat center top;*/
   padding-top:80px;
   text-align:center;
@@ -88,5 +88,5 @@
 body{
 
 	
-	background-color:#79BD9A;
+	background-color:#1CBCAD;
 }
