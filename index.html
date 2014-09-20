@@ -14,9 +14,13 @@
     <script src="jquery-1.11.1.js"></script>
 
     <script>
+var mode;
+var cost;
+var threshold;
+
 $(document).ready(function(){
   $("button").click(function(){
-    $("#form").fadeIn("3000");
+    $("#form").fadeIn("slow");
    
   });
 });
@@ -49,6 +53,12 @@ $(document).ready(function(){
 		</p>
 			<p>
 			Enter some information to begin!</p>
+
+			<form>
+Will users be allowed to vote for free or require a payment?<br>
+Enter amount of payment<br>
+How many votes will be required to pick a song?<br>
+			</form>
 
 <p>
 
