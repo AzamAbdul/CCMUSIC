@@ -91,12 +91,19 @@
 	left: 0;
 	z-index: 100;
 	text-align: center;
-	font-size:50px;
+	font-size:30px;
 	height:100%;
 	width:100%;
 	background-color:#7BBE9B;
 	display:none;
+color:black;
+}
+.form h1{
+font-size:50px;
+}
 
+.form input{
+color:#008EB5
 }
 .bottom{
 	position: fixed;
