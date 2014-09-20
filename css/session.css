@@ -7,37 +7,59 @@ body, html {
 
 .form {
 
+  position: relative;
   background: rgba(255, 255, 255, 0.30);
-  border-radius: 40px;
+  border-radius: 3px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-
-
+  padding:5px;
   z-index: 2;
-  position: fixed;
-  top: 330px;
-  left: 50%; 
-
-  transform: translate(-50%);
-
+  top: 420px;
+  left: 0%; 
+  color:white;
+  display:inline;
+  width: 20%;
   font-family: Lato;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
+.button{
+  -moz-box-shadow:inset 0px 0px 0px 0px #bee2f9;
+  -webkit-box-shadow:inset 0px 0px 0px 0px #bee2f9;
+  box-shadow:inset 0px 0px 0px 0px #bee2f9;
+  background-attachment: relative;
+  background-position: center center;
+ 
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf) );
+  background:-moz-linear-gradient( center top, #63b8ee 5%, #468ccf 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf');
+  background-color:#63b8ee;
+  border-radius: 15px;
+  text-indent:0;
+  border:1px solid #3866a3;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Lato;
+  font-size:15px;
+  font-weight:bold;
+  font-style:normal;
+  height:25px;
+ 
+}
 .background-image {
+
   position:fixed;
   background-image: url('../party.jpg');
   background-size: cover;
+  background-position: center;
   background-color: rgba(0,0,0,0.7); 
+
   width: 100%;
-  height: 300px;
+  height:300px;
   z-index: 1;
   padding: 0px;
   margin: 0px;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+
+
 }
 .header {
   position: relative;
@@ -47,15 +69,12 @@ body, html {
 
 }
 
-.section {
-
-}
 
 .content {
 
-  position: fixed;
-  top: 85px;
-  left: 50%; 
+  position: relative;
+  top: 100px;
+  left: 10%; 
   transform: translate(-50%);
 
 
@@ -64,9 +83,9 @@ body, html {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   font-size: 30px;
 
-  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-family: Lato;
   text-align: center;
   z-index: 2;
-  width: 500px;
+  
   margin: 0px auto 0px auto;
 }
