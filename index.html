@@ -12,6 +12,19 @@
     <link rel="shortcut icon" href="note.jpg">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script src="jquery-1.11.1.js"></script>
+
+    <script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("form").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+
+
 <title>
     CCMusic
 </title>
@@ -30,8 +43,23 @@
 	
 		<button type='button' name='Create
 		session' id='button' class="start animate shake" value='Go.' onclick="window.location.href='session.html'"/>Create Session</button>
-		<div class="form">
-			Enter some information to begin!
+		<div class="form" id="form">
+			<br>
+			<br>
+<p>
+			<img src="terp_hacker.jpg" align=center width=25em height=30em></img>
+		</p>
+			<p>
+			Enter some information to begin!</p>
+
+<p>
+
+
+			<button type='button' name='Create
+		session' id='button' class="start animate shake" value='Go.' onclick="window.location.href='session.html'" align=center/>Begin!</button>
+	</p>
+
+		
 		</div>
 		<img src="terp_hacker.jpg" class="bottom"></img>
 	</div>
