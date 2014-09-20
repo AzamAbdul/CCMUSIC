@@ -52,7 +52,15 @@
 	top:60px;
 
 }
-
+.bottom{
+	position: fixed;
+	width:60px;
+	height: 60px;
+	left:5px;
+	bottom:5px;
+	margin:0px;
+	padding:0px;
+}
 body{
 
 	
