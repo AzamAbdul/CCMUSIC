@@ -84,6 +84,13 @@
 	top:60px;
 
 }
+
+.form{
+	position: relative;
+	text-align: center;
+	top:100px;
+
+}
 .bottom{
 	position: fixed;
 	width:60px;
