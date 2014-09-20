@@ -54,7 +54,7 @@
 	background: url(../party.jpg) no-repeat center top;
 	background-attachment: relative;
 	background-position: center center;
-  	min-height: 300px;
+  	min-height: 500px;
   	width: 100%;
 
   	 -webkit-background-size: 100%;
@@ -74,12 +74,20 @@
   filter: blur(5px);
 }
 
+.content {
+
+	padding-top:80px;
+	text-align: center;
+	background-attachment: relative;
+}
+
 .header {
   /*background: #1CBCAD;*/
   /*background: url(../images/header-bg-2.jpg) no-repeat center top;*/
   padding-top:80px;
   text-align:center;
-  background-attachment: relative;
+  position: relative; top:40px;
+  background-attachment: absolute;
   background-position: center center;
   min-height: 300px;
   width: 100%;
