@@ -33,15 +33,10 @@ $(document).ready(function(){
   
 
    	var jobValue = document.getElementsByName('threshold')[0].value;
-  $.ajax({
-  	type: "POST",
-  	url: "backend.rb",
+  	$.ajax({type: "POST",url: "backend.rb"});
+  	alert("here");
+	});
 
-  .done(function() {
-    alert( "Data Saved: ");
-  });
-});
-});
 });
 
 </script>
