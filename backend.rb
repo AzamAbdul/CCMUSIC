@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'twilio-ruby'
 require 'mysql'
-set :port, 9494
+set :port, 80
 post '/backend' do
     # Get your Account Sid and Auth Token from twilio.com/user/account
     account_sid = 'AC6c76cd9a15da6f85af498cc6f7bc0199'
