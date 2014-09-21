@@ -17,7 +17,9 @@
 
 var cost;
 var votes;
+function statechange(){
 
+}
 $(document).ready(function(){
 
     $("button").click(function(){
@@ -30,11 +32,16 @@ $(document).ready(function(){
   
 
    	var jobValue = document.getElementsByName('threshold')[0].value;
-  	 $.ajax({
-        type: "POST",
-        url: "backend.rb"
-
-  });
+   	var httpRequest;
+	if (window.XMLHttpRequest) { // Mozilla, Safari, ...
+    	httpRequest = new XMLHttpRequest();
+	} else if (window.ActiveXObject) { // IE 8 and older
+    	httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	httpRequest.onreadystatechange = statechange;
+  	httpRequest.open('POST', 'backend.rb');
+  	alert("hello");
+	httpRequest.send(null);
 });
 });
 </script>
