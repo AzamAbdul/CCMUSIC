@@ -1,6 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_OYBhNX
+
+
 $AccountSid = "PNfe33aca3efd5db370f02103a29ceef0b";
 $AuthToken = "736020ee82cf40555e6d4033032ddaa9";
 
@@ -42,8 +43,8 @@ mysqli_close($con);
 <Response>
     <Message>Thanks for your vote!</Message>
 </Response>
-=======
+
 $con=mysqli_connect("azamabdul.com","")
 
 ?>
->>>>>>> .merge_file_LIbblU
+
