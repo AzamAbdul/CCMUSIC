@@ -13,7 +13,24 @@
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
-    <script src="/jquery-ui-1.11.1"></script>
+    <script src="jquery-ui-1.11.1"></script>
+    <script>
+$(document).ready(
+  if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+  else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+  xmlhttp.open("POST","backend.rb",true);
+  alert(XMLHttpRequest.send());
+  
+}
+});
+</script>
 <body>
   <div class = "background-image animated shake">
 
@@ -58,23 +75,6 @@ Song name:
   </div>
 </body>
 
-<script>
-alert("here");
-$( document ).ready(
-  if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-  else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
 
-  xmlhttp.open("POST","backend.rb",true);
-  alert(XMLHttpRequest.send());
-  
-}
-});
-</script>
 </html>
 

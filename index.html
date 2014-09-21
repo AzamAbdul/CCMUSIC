@@ -19,16 +19,28 @@ var cost;
 var votes;
 
 $(document).ready(function(){
+
   $("button").click(function(){
+    
     $("#form").fadeIn("slow");
    
+  });
+
+  $("#beginbutton").click(function(){
+    $("#start").fadeIn("slow");
+
+   	var jobValue = document.getElementsByName('threshold')[0].value;
+  	 $.ajax({
+        type: "POST",
+        url: "backend.rb"
+
   });
 });
 </script>
 
 
 <title>
-    CCMusic
+    CsMusic
 </title>
 
 </head>
@@ -62,16 +74,21 @@ How many votes will be required to pick a song? <input type="number" name="thres
 
 <p>
 
-
+			<div id="beginbutton">
 			<button type='button' name='Create
 		session' id='button2' class="start animate shake" value='Go.' onclick="window.location.href='session.html'" align=center/>Begin!</button>
+			</div>
 	</p>
 
 		
 		</div>
-		<img src="terp_hacker.jpg" class="bottom"></img>
+	
 	</div>
 </div>
+
+<script>
+
+	</script>
 </body>
 </html>
 
