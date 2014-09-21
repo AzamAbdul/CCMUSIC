@@ -32,17 +32,13 @@ $(document).ready(function(){
   
 
    	var jobValue = document.getElementsByName('threshold')[0].value;
-   	var httpRequest;
-	if (window.XMLHttpRequest) { // Mozilla, Safari, ...
-    	httpRequest = new XMLHttpRequest();
-	} else if (window.ActiveXObject) { // IE 8 and older
-    	httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
-	}
+  $.ajax({
+  	type: "POST",
+  	url: "backend.rb",
 
-	httpRequest.onreadystatechange = statechange;
-  	httpRequest.open('POST', 'backend.rb');
- 
-});
+  .done(function() {
+    alert( "Data Saved: ");
+  });
 });
 </script>
 
