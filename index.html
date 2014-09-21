@@ -38,10 +38,10 @@ $(document).ready(function(){
 	} else if (window.ActiveXObject) { // IE 8 and older
     	httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
 	}
+
 	httpRequest.onreadystatechange = statechange;
   	httpRequest.open('POST', 'backend.rb');
-  	alert("hello");
-	httpRequest.send(null);
+ 
 });
 });
 </script>
