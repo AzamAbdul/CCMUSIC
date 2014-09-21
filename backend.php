@@ -1,7 +1,4 @@
 <?php
-
-
-
 $AccountSid = "PNfe33aca3efd5db370f02103a29ceef0b";
 $AuthToken = "736020ee82cf40555e6d4033032ddaa9";
 
