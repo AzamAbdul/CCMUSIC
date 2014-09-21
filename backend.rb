@@ -15,7 +15,11 @@ body=""
     message.body=~/(^[\s\S]*)by(.*)/
     song=$1
     artist=$2
-    con.query("INSERT INTO votetable(song) VALUES('#{song}')")
-    con.query("INSERT INTO votetable(artist) VALUES('#{artist}')")
+    checkexists = con.query "SELECT song FROM votetable WHERE song='#{song}';"
+    puts "query: #{checkexists.fetch_row} song:#{song}" 
+    if checkexists.fetch_row != song
+	     con.query("INSERT INTO votetable(song,artist) VALUES('#{song}','#{artist}')")
+	     
+    end
 }
 
