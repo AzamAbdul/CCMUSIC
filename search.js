@@ -1,11 +1,12 @@
 // Your use of the YouTube API must comply with the Terms of Service:
 // https://developers.google.com/youtube/terms
+var videoID;
 
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
 	var test=responseString.match(/\"videoId\":\s+\"(\S+)\"/);
-   var videoID=test[1];
+   videoID=test[1];
     document.getElementById('response').innerHTML += responseString;
 }
 

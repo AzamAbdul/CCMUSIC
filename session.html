@@ -68,14 +68,27 @@ Song name:
 <input type="submit" class="button" value="Submit">
 </form>
 
+     <script src="search.js" type="text/javascript"></script>
+        <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+        <pre id="response"></pre>
+<script> showResponse( document.getElementById('response').innerHTML ); </script>
 
 <div class=player>
+
+<script>
+
+
+var videoID="E6KwXYmMiak";
 <!-- B changes -->
 <label for="videoUrl"><strong>Youtube Video ID</strong></label>
-  <input type="text" id="videoUrl" name="videoUrl" value="E6KwXYmMiak">
+  <input type="text" id="videoUrl" name="videoUrl" value=videoID>
   <div id="mydiv"><iframe id="frame" src="" width="500" height="300">
    </iframe></div>
   <button id="button">Load</button>
+
+  </script>
+
+
 
 </div>
 
