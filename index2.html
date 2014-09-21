@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $.get("https://api.spotify.com/v1/search?q=lukydube&type=album,artist,track&market=US",function(data,status){
-      alert("Data: " + data + "\nStatus: " + status);
-    });
-  });
-});
-</script>
-</head>
   <body>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player"></div>
-<button>Send an HTTP GET request to a page and get the result back</button>
 
-
-
-<iframe src="https://embed.spotify.com/?uri=spotify:track:4bz7uB4edifWKJXSDxwHcs&theme=white" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
     <script>
-     
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
       var player;
@@ -29,7 +19,7 @@ $(document).ready(function(){
         player = new YT.Player('player', {
           height: '390',
           width: '640',
-          videoId: 'mWRsgZuwf_8',
+          videoId: 'gCT3Li5dfZE',
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -45,7 +35,7 @@ $(document).ready(function(){
       // 5. The API calls this function when the player's state changes.
       //    The function indicates that when playing a video (state=1),
       //    the player should play for six seconds and then stop.
-      var done = true;
+      var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
           setTimeout(stopVideo, 6000);
