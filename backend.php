@@ -3,4 +3,4 @@
 // This line loads the library
 require('/path/to/twilio-php/Services/Twilio.php');
 
-mysqli_connect()
+$con=mysqli_connect("azamabdul.com","")
