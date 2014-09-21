@@ -33,14 +33,14 @@ $(document).ready(function(){
   
 
    	var jobValue = document.getElementsByName('threshold')[0].value;
-  	$.ajax({
-  type: "POST",
-  url: "backend.rb",
-  dataType: "script"
-});
-  	alert("here");
-	});
-
+  	var xmlhttp =  new XMLHttpRequest();
+  	xmlhttp.open('POST', 'backend.rb', true);
+  	xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4) {
+        alert("finished");
+    }
+    xmlhttp.send(null);
+}
 });
 
 </script>
