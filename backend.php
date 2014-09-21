@@ -44,7 +44,4 @@ mysqli_close($con);
     <Message>Thanks for your vote!</Message>
 </Response>
 
-$con=mysqli_connect("azamabdul.com","")
-
-?>
 
