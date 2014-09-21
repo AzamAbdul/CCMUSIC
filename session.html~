@@ -74,7 +74,6 @@ Song name:
   <div id="mydiv"><iframe id="frame" src="" width="500" height="300">
    </iframe></div>
   <button id="button">Load</button>
-<!-- This line is an attempt to auto load the page -->
 <div document.getElementsByClassName("button")[0].click(); > </div>
 
 </body>
