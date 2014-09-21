@@ -56,5 +56,14 @@ Song name:
   <div class ="feed">
   </div>
 </body>
+
+<?php
+$sql = "SELECT * FROM vote";
+$query = mysqli_query($con, $sql);
+while ($result = mysqli_fetch_array($query))
+{
+    echo "Phone: " .$result['phone'] ." Song: " .$result['song'] ." Artist: " .$result['artist'] ."<br>";
+}
+?>
 </html>
 
