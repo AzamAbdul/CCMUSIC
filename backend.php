@@ -23,7 +23,7 @@ if($body != NULL ){
 $host = 'localhost';
 $user = 'mysqladmin'
 $pass = 'hackgt';
-$db = 'voter';
+$db = 'votes';
 
 $con = mysqli_connect($host,$user,$pass,$db);
 
@@ -44,7 +44,4 @@ mysqli_close($con);
     <Message>Thanks for your vote!</Message>
 </Response>
 
-$con=mysqli_connect("azamabdul.com","")
-
-?>
 
