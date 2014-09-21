@@ -57,13 +57,21 @@ Song name:
   </div>
 </body>
 
-<?php
-$sql = "SELECT * FROM vote";
-$query = mysqli_query($con, $sql);
-while ($result = mysqli_fetch_array($query))
-{
-    echo "Phone: " .$result['phone'] ." Song: " .$result['song'] ." Artist: " .$result['artist'] ."<br>";
+<script>
+$( document ).ready(
+  if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+  xmlhttp.open("POST","backend.rb",true);
+  XMLHttpRequest.send();
 }
-?>
+});
+</script>
 </html>
 
