@@ -11,15 +11,19 @@ song =""
 artist =""
 body=""
 @client.account.messages.list.each {|message|
-    puts message.body
+    
     message.body=~/(^[\s\S]*)by(.*)/
     song=$1
     artist=$2
     checkexists = con.query "SELECT song FROM votetable WHERE song='#{song}';"
-    puts "query: #{checkexists.fetch_row} song:#{song}" 
-    if checkexists.fetch_row != song
-	     con.query("INSERT INTO votetable(song,artist) VALUES('#{song}','#{artist}')")
-	     
+     
+    if "#{checkexists.fetch_row}" != "[\"#{song}\"]"
+	puts "inserted"
+	con.query("INSERT INTO votetable(song,artist,votes) VALUES('#{song}','#{artist}',1);")
+     else
+	con.query("UPDATE votetable SET votes=votes+1 WHERE song='#{song}';")
     end
+    song =""
+    artist=""
 }
 
