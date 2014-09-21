@@ -1,10 +1,21 @@
 require 'rubygems'
 require 'twilio-ruby'
+require 'mysql'
  
 # Get your Account Sid and Auth Token from twilio.com/user/account
-account_sid = 'PNfe33aca3efd5db370f02103a29ceef0b'
+account_sid = 'AC6c76cd9a15da6f85af498cc6f7bc0199'
 auth_token = '736020ee82cf40555e6d4033032ddaa9'
+con = Mysql.new 'localhost', 'root', 'hackgt', 'votedb'
 @client = Twilio::REST::Client.new account_sid, auth_token
-@client.account.messages.list.each do |message|
-    File.open("text.txt", 'w') { |file| file.write("#{message}") }
-end
+song =""
+artist =""
+body=""
+@client.account.messages.list.each {|message|
+    puts message.body
+    message.body=~/(^[\s\S]*)by(.*)/
+    song=$1
+    artist=$2
+    con.query("INSERT INTO votetable(song) VALUES('#{song}')")
+    con.query("INSERT INTO votetable(artist) VALUES('#{artist}')")
+}
+
