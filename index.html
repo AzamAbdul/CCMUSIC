@@ -4,6 +4,7 @@
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
 
+    <title>CS Music</title>
     <!-- OPTIONAL: description -->
     <meta name="description" content="a web application for djing parties">
 
@@ -17,7 +18,9 @@
 
 var cost;
 var votes;
+function statechange(){
 
+}
 $(document).ready(function(){
 
     $("button").click(function(){
@@ -30,13 +33,17 @@ $(document).ready(function(){
   
 
    	var jobValue = document.getElementsByName('threshold')[0].value;
-  	 $.ajax({
-        type: "POST",
-        url: "backend.rb"
+  	var xmlhttp =  new XMLHttpRequest();
+  	xmlhttp.open('POST', 'backend.rb', true);
+  	xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4) {
+        alert("finished");
+    }
+}
+    xmlhttp.send(null);
+});
+});
 
-  });
-});
-});
 </script>
 
 
