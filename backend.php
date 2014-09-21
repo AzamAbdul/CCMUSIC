@@ -1,5 +1,5 @@
 <?php
-$AccountSid = "PNfe33aca3efd5db370f02103a29ceef0b";
+$AccountSid = "AC6c76cd9a15da6f85af498cc6f7bc0199";
 $AuthToken = "736020ee82cf40555e6d4033032ddaa9";
 
 require "Services/Twilio.php";
@@ -18,7 +18,7 @@ if($body != NULL ){
 }
 //connect to database
 $host = 'localhost';
-$user = 'mysqladmin'
+$user = 'mysqladmin';
 $pass = 'hackgt';
 $db = 'votes';
 
