@@ -5,6 +5,14 @@ body, html {
   
 }
 
+.player {
+position: absolute;
+top: 320px;
+left: 500px;
+z-index: 1;
+
+}
+
 .form {
 
   position: relative;
