@@ -20,14 +20,14 @@ var votes;
 
 $(document).ready(function(){
 
-  $("button").click(function(){
+    $("button").click(function(){
     
     $("#form").fadeIn("slow");
-   
+  
   });
 
   $("#beginbutton").click(function(){
-    $("#start").fadeIn("slow");
+  
 
    	var jobValue = document.getElementsByName('threshold')[0].value;
   	 $.ajax({
@@ -35,6 +35,7 @@ $(document).ready(function(){
         url: "backend.rb"
 
   });
+});
 });
 </script>
 
@@ -54,9 +55,10 @@ $(document).ready(function(){
 			Rather than having an individual dictate the music playing at your event, we let the attendees have a vote. Democracy at it's best!
 		</div>
 		
-	
+		
 		<button type='button' name='Create
 		session' id='hide' class="start animate shake" value='Go.' />Create Session</button>
+
 		<div class="form" id="form">
 			<br>
 			<br>
