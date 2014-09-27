@@ -16,11 +16,6 @@
 
     <script>
 
-var cost;
-var votes;
-function statechange(){
-
-}
 $(document).ready(function(){
 
     $("button").click(function(){
@@ -37,7 +32,7 @@ $(document).ready(function(){
   	xmlhttp.open('POST', 'http:www.azamabdul.com/CCMUSIC/backend.rb', true);
   	xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4) {
-        alert("finished");
+        
     }
 }
     xmlhttp.send();
@@ -69,25 +64,23 @@ $(document).ready(function(){
 		<div class="form" id="form">
 			<br>
 			<br>
-<p>
-			<img src="terp_hacker.jpg" align=center width=25em height=30em></img>
-		</p>
-			<p>
-			<h1>Enter some information to begin! Your number is 240 650 8835</h1><br><br></p>
+
+			
+			<h1>Enter some information to begin!<br>Your number is 240 650 8835</h1><br><br></p>
 
 			<form>
 
-Enter amount of payment (0 for free mode) $<input type="number" name="payment" min="0" max="99999" size="25" height="35"><br><br>
-How many votes will be required to pick a song? <input type="number" name="threshold" min="1" max="99999"><br><br>
+Enter amount of payment (0 for free mode) <input type="number" name="payment" min="0" max="99999" size="25" height="35"><br>
+How many votes will be required to pick a song? <input type="number" name="threshold" min="1" max="99999">
 			</form>
 
-<p>
+	
 
 			<div id="beginbutton">
 			<button type='button' name='Create
 		session' id='button2' class="start animate shake" value='Go.' onclick="window.location.href='session.html'" align=center/>Begin!</button>
 			</div>
-	</p>
+	
 
 		
 		</div>
