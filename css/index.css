@@ -101,7 +101,7 @@
 @media (max-width: 600px){
   .form{
   	font-size: 15px;
-  	
+  	position: relative;
   }
   .form h1{
 	font-size: 30px;
