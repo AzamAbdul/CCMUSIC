@@ -97,11 +97,10 @@
 .form input{
 	color:#008EB5
 }
-
-@media (max-width: 600px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
   .form{
   	font-size: 15px;
-  	position: relative;
+
   }
   .form h1{
 	font-size: 30px;
