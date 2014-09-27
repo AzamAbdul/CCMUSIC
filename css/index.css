@@ -99,11 +99,11 @@
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
   .form{
-  	font-size: 15px;
+  	font-size: 10px;
 
   }
   .form h1{
-	font-size: 30px;
+	font-size: 25px;
 	}
 }
 .bottom{
